@@ -1,0 +1,4 @@
+mvn liquibase:updateSQL
+- UPD DATABASE
+mvn spotless::apply
+- CLEAN CODE
