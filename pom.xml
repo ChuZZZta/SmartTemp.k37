@@ -26,6 +26,12 @@
             <artifactId>json</artifactId>
             <version>20240303</version>
         </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -38,6 +44,18 @@
                     <java>
                         <googleJavaFormat/>
                     </java>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.liquibase</groupId>
+                <artifactId>liquibase-maven-plugin</artifactId>
+                <version>4.30.0</version>
+                <configuration>
+                    <!--TODO MOVE TO SECRET AFTER TESTINGS-->
+                    <changeLogFile>changelog.sql</changeLogFile>
+                    <url>jdbc:mysql://192.168.100.225:3306/smarthome</url>
+                    <username>smart</username>
+                    <password>smart</password>
                 </configuration>
             </plugin>
         </plugins>
