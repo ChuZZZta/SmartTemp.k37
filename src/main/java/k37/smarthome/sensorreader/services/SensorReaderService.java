@@ -5,7 +5,9 @@ import java.nio.charset.StandardCharsets;
 import java.util.*;
 import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;
+import org.springframework.stereotype.Service;
 
+@Service
 public class SensorReaderService {
 
     private List<JSONObject> getSensorJSONs(){
@@ -28,5 +30,9 @@ public class SensorReaderService {
         );
 
         return jsonObjectList;
+    }
+
+    public void test(){
+        System.out.println("xd");
     }
 }

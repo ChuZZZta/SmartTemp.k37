@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author:  czzza
+      changes:
+        - createTable:
+            tableName:  readings
+            columns:
+              - column:
+                  name:  id
+                  type:  int
+                  autoIncrement:  true
+                  constraints:
+                    primaryKey:  true
+                    nullable:  false
+              - column:
+                  name:  value
+                  type:  varchar(50)
+                  constraints:
+                    nullable:  false
+              - column:
+                  name:  type
+                  type:  varchar(50)
