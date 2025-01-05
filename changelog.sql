@@ -1,2 +1,8 @@
+--liquibase formatted sql
 
-CREATE TABL test_table (test_id INT, test_column VARCHAR, PRIMARY KEY (test_id))
+--changeset chuzzzta:1
+create table readings (
+    id int primary key,
+    readings float,
+    type varchar(50)
+);

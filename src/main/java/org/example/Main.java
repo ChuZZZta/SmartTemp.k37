@@ -2,6 +2,9 @@ package org.example;
 
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.util.*;
 import org.apache.commons.io.IOUtils;
 import org.json.JSONObject;
