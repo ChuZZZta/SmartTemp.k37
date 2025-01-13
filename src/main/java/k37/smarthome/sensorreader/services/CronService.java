@@ -7,11 +7,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CronService {
-    @Autowired
-    SensorReaderService sensorReaderService;
+  @Autowired SensorReaderService sensorReaderService;
 
-    @Scheduled(cron = "0 * * * * *") // Cron expression for running every minute
-    public void execute() {
-        sensorReaderService.test();
-    }
+  @Scheduled(cron = "0 * * * * *") // Cron expression for running every minute
+  public void execute() {
+    sensorReaderService.test();
+  }
 }

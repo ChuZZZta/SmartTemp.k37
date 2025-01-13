@@ -1,11 +1,12 @@
 package k37.smarthome.sensorreader.entities.sensor;
 
+import k37.smarthome.sensorreader.entities.SensorType;
 import lombok.Data;
-
-import java.util.UUID;
 
 @Data
 public class SensorDTO {
-    UUID id;
-
+  private Integer id;
+  private SensorType type;
+  private String name;
+  private String address;
 }

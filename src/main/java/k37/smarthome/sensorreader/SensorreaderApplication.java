@@ -8,8 +8,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class SensorreaderApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(SensorreaderApplication.class, args);
-	}
-
+  public static void main(String[] args) {
+    SpringApplication.run(SensorreaderApplication.class, args);
+  }
 }
