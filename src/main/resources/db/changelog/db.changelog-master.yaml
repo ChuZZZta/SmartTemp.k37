@@ -21,3 +21,6 @@ databaseChangeLog:
               - column:
                   name:  type
                   type:  varchar(50)
+              - column:
+                  name:  type
+                  type:  varchar(50)

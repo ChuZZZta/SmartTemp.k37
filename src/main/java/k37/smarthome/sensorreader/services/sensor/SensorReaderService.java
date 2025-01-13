@@ -1,4 +1,4 @@
-package k37.smarthome.sensorreader.services;
+package k37.smarthome.sensorreader.services.sensor;
 
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
